@@ -70,7 +70,7 @@ html, body {
 
 .mdl-demo main > .mdl-layout__tab-panel {
   padding: 8px;
-  padding-top: 48px;
+  padding-top: 10px;
 }
 
 .mdl-demo .mdl-card {
@@ -84,11 +84,11 @@ html, body {
 }
 
 .mdl-demo .mdl-card .mdl-card__supporting-text {
-  margin: 40px;
-  flex-grow: 1;
-  padding: 0;
-  color: inherit;
-  width: calc(100% - 80px);
+margin: 40px;
+flex-grow: 1;
+padding: 0;
+color: inherit;
+width: calc(100% - 80px);
 }
 
 .mdl-demo.mdl-demo .mdl-card__supporting-text h4 {
@@ -135,7 +135,7 @@ html, body {
 }
 
 .mdl-demo section.section--center {
-  max-width: 1024px;
+  max-width: 1280px;
 }
 
 .mdl-demo #features section.section--center {
@@ -377,6 +377,6 @@ html, body {
 }
 .custom-section__circle-container {
   color: #fff;
-  background: url('../images/logo.png') left 15% no-repeat;
+  background: url('../images/logo.png') left center no-repeat;
   background-size: contain;
 }
