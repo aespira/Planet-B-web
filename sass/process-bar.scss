@@ -1,0 +1,81 @@
+@import 'compass';
+@import 'compass/css3';
+
+// Quick and very dirty.
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.process-bars {
+  margin: 100px 150px;
+}
+
+$width: 500px;
+$height: 20px;
+
+.process-bar {
+
+  margin: 40px 0;
+
+  position: relative;
+  width: $width;
+  height: $height;
+  overflow: hidden;
+  border-radius: 4px 4px;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px 4px;
+    top: 0;
+    left: -100%;
+    animation: simple-bar 4s infinite;
+  }
+  &.bar--simple {
+    border: 1px solid #22DB40;
+    &:after {
+      background: #22DB40;
+    }
+  }
+  &.bar--snake {
+    border: 1px solid teal;
+    &:after {
+      background-color: #fff;
+      background-image: linear-gradient(45deg, green, transparent 11px, #000);
+      background-size: 11px 11px;
+      animation-duration: 6s;
+      animation-timing-function: linear;
+    }
+  }
+  &.bar--xp {
+    border: 1px solid gray;
+    &:after {
+      background-color: #3399FF;
+      background-image: linear-gradient(90deg, transparent 80%, #fff 20%);
+      background-size: 20px 20px;
+      animation-duration: 8s;
+      animation-timing-function: ease-in;
+    }
+  }
+  &.bar--teal {
+    border: 1px solid teal;
+    &:after {
+      background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #008080 25px, #008080 25px);
+      animation-duration: 2s;
+      animation-timing-function: linear;
+    }
+  }
+  &.sharp, &.sharp:after {
+    border-radius: 0 0;
+  }
+}
+
+@keyframes simple-bar {
+  to {
+    left: 0;
+  }
+}

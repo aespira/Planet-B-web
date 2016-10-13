@@ -129,8 +129,13 @@ html, body {
   margin-bottom: 48px;
 }
 
+.mdl-layout__content {
+  background-color: #f3f2ee;
+  background: url('../images/paper-pattern.jpg');
+}
+
 .mdl-demo section.section--center {
-  max-width: 860px;
+  max-width: 1024px;
 }
 
 .mdl-demo #features section.section--center {
@@ -204,7 +209,7 @@ html, body {
 }
 
 .mdl-demo section.section--footer {
-  padding: 64px 0;
+  padding: 32px 0;
   margin: 0 -8px -8px -8px;
 }
 
@@ -252,4 +257,126 @@ html, body {
 
 .mdl-demo .mdl-menu__container {
   z-index: 99;
+}
+
+/*
+* Support search form
+*/
+/* TODO: Hover and Focus state.
+ *       Fix position of mobile search button.
+ */
+.mdh-expandable-search {
+  margin: 0 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mdh-expandable-search form {
+  max-width: 600px;
+}
+
+.mdh-expandable-search,
+.mdh-expandable-search form,
+.mdh-expandable-search input {
+  /* Cross browser flex-grow */
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.mdh-expandable-search,
+.mdh-expandable-search form {
+  /* Cross browser inline-flex */
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+/* Position search icon */
+.mdh-expandable-search .material-icons {
+  position: relative;
+  right: -40px;
+  margin-left: -24px; /* Remove the blank space left behind by the icon being relatively positioned */
+}
+
+.mdh-expandable-search input {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #78909C;
+  padding: 0px 35px 0px 70px;
+  height: 40px;
+  line-height: 40px; /* TODO: This was recommended for cross browser compatability of input height, check if its actually needed in modern browsers */
+
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+.mdh-expandable-search input::-webkit-input-placeholder { /* WebKit browsers */
+  color: #FFFFFF;
+}
+
+.mdh-expandable-search input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #FFFFFF;
+  opacity: 1; /* Firefox gives the placeholder a reduced opacity so we have to increase it */
+}
+
+.mdh-expandable-search input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #FFFFFF;
+  opacity: 1; /* Firefox gives the placeholder a reduced opacity so we have to increase it */
+}
+
+.mdh-expandable-search input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  /*    color:    #FFFFFF; */
+}
+
+/* Bug fix: https://github.com/google/material-design-lite/issues/1078
+ * To much padding on the left of header when the menu button is hidden */
+@media screen and (min-width: 851px) {
+  .mdl-layout__header-row {
+    padding: 0 40px 0 40px;
+  }
+}
+
+/* Square card style
+ * */
+.demo-card-square.mdl-card {
+  /*width: 320px;*/
+  /*height: 250px;*/
+}
+
+.demo-card-square1 > .mdl-card__title {
+  color: #fff;
+  background: url('../images/Google_-G-_Logo.svg.png') bottom right 15% no-repeat #c7f464;
+  background-size: contain;
+}
+
+.demo-card-square2 > .mdl-card__title {
+  color: #fff;
+  background: url('../images/NBC_logo.svg.png') bottom right 15% no-repeat #46B6AC;
+  background-size: contain;
+}
+
+.demo-card-square3 > .mdl-card__title {
+  color: #fff;
+  background: url('../images/Starbucks_Corporation_Logo_2011.svg.png') bottom right 15% no-repeat #ff6b6b;
+  background-size: contain;
+}
+
+.custom-img {
+  display: block;
+  max-width:100px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+}
+.custom-section__circle-container {
+  color: #fff;
+  background: url('../images/logo.png') left 15% no-repeat;
+  background-size: contain;
 }
