@@ -352,7 +352,7 @@ width: calc(100% - 80px);
 
 .demo-card-square1 > .mdl-card__title {
   color: #fff;
-  background: url('../images/Google_-G-_Logo.svg.png') bottom right 15% no-repeat #c7f464;
+  background: url('../images/Google_-G-_Logo.svg.png') top right 15% no-repeat #c7f464;
   background-size: contain;
 }
 
