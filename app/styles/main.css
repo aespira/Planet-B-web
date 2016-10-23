@@ -84,11 +84,11 @@ html, body {
 }
 
 .mdl-demo .mdl-card .mdl-card__supporting-text {
-margin: 40px;
-flex-grow: 1;
-padding: 0;
-color: inherit;
-width: calc(100% - 80px);
+  margin: 40px;
+  flex-grow: 1;
+  padding: 0;
+  color: inherit;
+  width: calc(100% - 80px);
 }
 
 .mdl-demo.mdl-demo .mdl-card__supporting-text h4 {
@@ -130,8 +130,8 @@ width: calc(100% - 80px);
 }
 
 .mdl-layout__content {
-  background-color: #f3f2ee;
-  background: url('../images/paper-pattern.jpg');
+  background-color: #ffffff;
+  /*background: url('../images/paper-pattern.jpg');*/
 }
 
 .mdl-demo section.section--center {
@@ -260,19 +260,43 @@ width: calc(100% - 80px);
 }
 
 /*
+* Custom mdl template
+*/
+.mdl-layout-title {
+  font-family: 'Michroma', sans-serif;
+}
+
+/*
 * Support search form
 */
 /* TODO: Hover and Focus state.
  *       Fix position of mobile search button.
  */
+.mdh-expandable-search-container {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .mdh-expandable-search {
+  padding: 0;
   margin: 0 50px;
+  width: 60%;
+  max-width: 780px;
   align-items: center;
   justify-content: center;
 }
 
 .mdh-expandable-search form {
-  max-width: 600px;
+  max-width: 780px;
 }
 
 .mdh-expandable-search,
@@ -343,8 +367,9 @@ width: calc(100% - 80px);
   }
 }
 
-/* Square card style
- * */
+/*
+* Square card style
+*/
 .demo-card-square.mdl-card {
   /*width: 320px;*/
   /*height: 250px;*/
@@ -358,25 +383,56 @@ width: calc(100% - 80px);
 
 .demo-card-square2 > .mdl-card__title {
   color: #fff;
-  background: url('../images/NBC_logo.svg.png') bottom right 15% no-repeat #46B6AC;
+  background: url('../images/NBC_logo.svg.png') top right 15% no-repeat #46B6AC;
   background-size: contain;
 }
 
 .demo-card-square3 > .mdl-card__title {
   color: #fff;
-  background: url('../images/Starbucks_Corporation_Logo_2011.svg.png') bottom right 15% no-repeat #ff6b6b;
+  background: url('../images/Starbucks_Corporation_Logo_2011.svg.png') top right 15% no-repeat #ff6b6b;
   background-size: contain;
 }
 
 .custom-img {
   display: block;
-  max-width:100px;
+  max-width: 100px;
   max-height: 100px;
   width: auto;
   height: auto;
 }
+
 .custom-section__circle-container {
-  color: #fff;
+  color: #ffffff;
   background: url('../images/logo.png') left center no-repeat;
+  background-size: contain;
+}
+
+/*
+* Custom style
+*/
+
+.mdl-card__actions {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.mdl-card__actions > .mdl-button--icon {
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+.mdl-card__title-1 {
+  background: url('../images/Google_-G-_Logo.svg.png') top right 15% no-repeat #c7f464;
+  background-size: contain;
+}
+
+.mdl-card__title-2 {
+  background: url('../images/NBC_logo.svg.png') top right 15% no-repeat #46B6AC;
+  background-size: contain;
+}
+
+.mdl-card__title-3 {
+  background: url('../images/Starbucks_Corporation_Logo_2011.svg.png') top right 15% no-repeat #ff6b6b;
   background-size: contain;
 }

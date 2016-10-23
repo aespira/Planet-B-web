@@ -17,9 +17,7 @@ $width: auto;
 $height: 20px;
 
 .process-bar {
-
   margin: 40px 0;
-
   position: relative;
   width: $width;
   height: $height;
@@ -28,7 +26,7 @@ $height: 20px;
   &:after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 50%;
     height: 100%;
     border-radius: 4px 4px;
     top: 0;
@@ -39,6 +37,7 @@ $height: 20px;
     border: 1px solid #22DB40;
     &:after {
       background: #22DB40;
+      animation-duration: 5s;
     }
   }
   &.bar--snake {
