@@ -25,6 +25,10 @@ html, body {
   padding: 0;
 }
 
+.mdl-layout__header-row {
+  background-color: #3F3F3F;
+}
+
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
 }
@@ -135,6 +139,7 @@ html, body {
 }
 
 .mdl-demo section.section--center {
+  width: 90%;
   max-width: 1280px;
 }
 
@@ -191,7 +196,7 @@ html, body {
   width: 64px;
   height: 64px;
   border-radius: 32px;
-  margin: 8px 0;
+  margin: 2px 0;
 }
 
 .mdl-demo section.section--footer .section__circle--big {
@@ -264,6 +269,7 @@ html, body {
 */
 .mdl-layout-title {
   font-family: 'Michroma', sans-serif;
+  color: #00E8AA;
 }
 
 /*
@@ -290,7 +296,7 @@ html, body {
   padding: 0;
   margin: 0 50px;
   width: 60%;
-  max-width: 780px;
+  max-width: 600px;
   align-items: center;
   justify-content: center;
 }
@@ -402,8 +408,7 @@ html, body {
 }
 
 .custom-section__circle-container {
-  color: #ffffff;
-  background: url('../images/logo.png') left center no-repeat;
+  background: url('../images/logo.png') center 30% no-repeat;
   background-size: contain;
 }
 
@@ -423,16 +428,21 @@ html, body {
 }
 
 .mdl-card__title-1 {
-  background: url('../images/Google_-G-_Logo.svg.png') top right 15% no-repeat #c7f464;
+  background: url('../images/Google_-G-_Logo.svg.png') top right 15% no-repeat;
   background-size: contain;
 }
 
 .mdl-card__title-2 {
-  background: url('../images/NBC_logo.svg.png') top right 15% no-repeat #46B6AC;
+  background: url('../images/NBC_logo.svg.png') top right 15% no-repeat;
   background-size: contain;
 }
 
 .mdl-card__title-3 {
-  background: url('../images/Starbucks_Corporation_Logo_2011.svg.png') top right 15% no-repeat #ff6b6b;
+  background: url('../images/Starbucks_Corporation_Logo_2011.svg.png') top right 15% no-repeat;
   background-size: contain;
+}
+
+.mdl-card__media {
+  height: 80px;
+  background-color: transparent;
 }

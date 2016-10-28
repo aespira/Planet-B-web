@@ -43,10 +43,12 @@
   material.blue-orange.min.css
   material.purple-indigo.min.css
   -->
-  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.yellow-pink.min.css"/>
+
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
 
   <!-- Material Design icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 
   <!-- Your styles -->
   <link rel="stylesheet" href="styles/main.css">
@@ -67,13 +69,13 @@
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header mdl-layout__header--seamed mdl-color--primary">
-    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    <div class="mdl-layout__header-row">
 
-      <span class="mdl-layout-title">AESPIRA</span>
+      <span class="mdl-layout-title">aespira</span>
 
       <!-- Displayed on Computer and Tablet -->
       <!-- Search -->
-      <div class="mdh-expandable-search mdl-cell--hide-phone" hidden="hidden">
+      <div class="mdh-expandable-search mdl-cell--hide-desktop mdl-cell--hide-phone">
         <i class="material-icons">search</i>
         <form action="#">
           <input type="text" placeholder="Search" size="1">
@@ -90,69 +92,36 @@
       </div>
 
       <!-- Buttons -->
-      <!--<div class="mdl-badge">-->
-      <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-button&#45;&#45;colored">-->
-      <!--SIGN UP-->
-      <!--</button>-->
-      <!--</div>-->
-      <!--<div class="mdl-badge">-->
-      <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-button&#45;&#45;colored">-->
-      <!--LOGIN-->
-      <!--</button>-->
-      <!--</div>-->
+      <div class="mdl-badge">
+        <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-button&#45;&#45;colored">-->
+        <!--SIGN UP-->
+        <!--</button>-->
+        <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-button&#45;&#45;colored">-->
+        <!--LOGIN-->
+        <!--</button>-->
+      </div>
     </div>
   </header>
   <!--End of page header-->
 
   <main class="mdl-layout__content">
 
-    <div class="mdl-layout">
-      <section class="section--center mdl-grid mdl-shadow--2dp">
-        <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
-          <div class="mdl-card__supporting-text mdl-grid">
-            <div class="custom-section__circle-container mdl-cell mdl-cell--3-col mdl-cell--1-col-phone">
-            </div>
-            <div class="section__text mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h4>Deal number 1</h4>
-              <div class="process-bar bar--simple"></div>
-            </div>
+    <section class="section--center mdl-grid mdl-shadow--2dp">
+
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet">
+        <div class="mdl-grid">
+          <div class="custom-section__circle-container mdl-cell mdl-cell--3-col">
+          </div>
+          <div class="section__text mdl-cell">
+            <h1>Deal number 1</h1>
+            <div class="process-bar bar--simple"></div>
           </div>
         </div>
-        <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
-          <div class="mdl-card__supporting-text mdl-grid">
-            <div class="custom-section__circle-container mdl-cell mdl-cell--3-col mdl-cell--1-col-phone">
-            </div>
-            <div class="section__text mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h4>Deal number 1</h4>
-              <div class="process-bar bar--simple"></div>
-            </div>
-          </div>
-        </div>
-        <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
-          <div class="mdl-card__supporting-text mdl-grid">
-            <div class="custom-section__circle-container mdl-cell mdl-cell--3-col mdl-cell--1-col-phone">
-            </div>
-            <div class="section__text mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h4>Deal number 1</h4>
-              <div class="process-bar bar--simple"></div>
-            </div>
-          </div>
-        </div>
-        <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
-          <div class="mdl-card__supporting-text mdl-grid">
-            <div class="custom-section__circle-container mdl-cell mdl-cell--3-col mdl-cell--1-col-phone">
-            </div>
-            <div class="section__text mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h4>Deal number 1</h4>
-              <div class="process-bar bar--simple"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <!--End of overview deal section-->
 
-    <div class="clearfix">
+    <div class="mdl-cell--hide-tablet mdl-cell--hide-phone clearfix">
       <section class="section--center mdl-grid">
         <div class="mdh-expandable-search-container">
           <div class="mdh-expandable-search">
@@ -170,7 +139,7 @@
 
       <section class="section--center mdl-grid mdl-shadow--1dp">
 
-        <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-shadow--2dp">
+        <div class="mdl-card mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-shadow--2dp">
           <figure class="mdl-card__media">
             <img src="http://tfirdaus.github.io/mdl/images/laptop.jpg" alt=""/>
           </figure>
@@ -180,11 +149,12 @@
           <div class="mdl-card__actions">
             <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">$120.00</a>
             <div class="mdl-layout-spacer"></div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">add_shopping_cart</i></button>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i
+              class="material-icons">add_shopping_cart</i></button>
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button>
           </div>
         </div>
-        <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-shadow--2dp">
+        <div class="mdl-card mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-shadow--2dp">
           <figure class="mdl-card__media">
             <img src="http://tfirdaus.github.io/mdl/images/laptop.jpg" alt=""/>
           </figure>
@@ -194,11 +164,12 @@
           <div class="mdl-card__actions">
             <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">$120.00</a>
             <div class="mdl-layout-spacer"></div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">add_shopping_cart</i></button>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i
+              class="material-icons">add_shopping_cart</i></button>
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button>
           </div>
         </div>
-        <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-shadow--2dp">
+        <div class="mdl-card mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-shadow--2dp">
           <figure class="mdl-card__media">
             <img src="http://tfirdaus.github.io/mdl/images/laptop.jpg" alt=""/>
           </figure>
@@ -208,37 +179,53 @@
           <div class="mdl-card__actions">
             <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">$120.00</a>
             <div class="mdl-layout-spacer"></div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">add_shopping_cart</i></button>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i
+              class="material-icons">add_shopping_cart</i></button>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button>
+          </div>
+        </div>
+        <div class="mdl-card mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-shadow--2dp">
+          <figure class="mdl-card__media">
+            <img src="http://tfirdaus.github.io/mdl/images/laptop.jpg" alt=""/>
+          </figure>
+          <div class="mdl-card__title mdl-card__title-1">
+            <h1 class="mdl-card__title-text">Men's Shoes</h1>
+          </div>
+          <div class="mdl-card__actions">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">$120.00</a>
+            <div class="mdl-layout-spacer"></div>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i
+              class="material-icons">add_shopping_cart</i></button>
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button>
           </div>
         </div>
 
         <!--<div class="demo-card-square demo-card-square1 mdl-card mdl-cell mdl-shadow&#45;&#45;2dp">-->
-          <!--<div class="mdl-card__title mdl-card&#45;&#45;expand">-->
-            <!--<h2 class="mdl-card__title-text">Product</h2>-->
-          <!--</div>-->
-          <!--<div class="mdl-card__supporting-text">-->
-            <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
-            <!--Aenan convallis.-->
-          <!--</div>-->
+        <!--<div class="mdl-card__title mdl-card&#45;&#45;expand">-->
+        <!--<h2 class="mdl-card__title-text">Product</h2>-->
+        <!--</div>-->
+        <!--<div class="mdl-card__supporting-text">-->
+        <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
+        <!--Aenan convallis.-->
+        <!--</div>-->
         <!--</div>-->
         <!--<div class="demo-card-square demo-card-square2 mdl-card mdl-cell mdl-shadow&#45;&#45;2dp">-->
-          <!--<div class="mdl-card__title mdl-card&#45;&#45;expand">-->
-            <!--<h2 class="mdl-card__title-text">Product</h2>-->
-          <!--</div>-->
-          <!--<div class="mdl-card__supporting-text">-->
-            <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
-            <!--Aenan convallis.-->
-          <!--</div>-->
+        <!--<div class="mdl-card__title mdl-card&#45;&#45;expand">-->
+        <!--<h2 class="mdl-card__title-text">Product</h2>-->
+        <!--</div>-->
+        <!--<div class="mdl-card__supporting-text">-->
+        <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
+        <!--Aenan convallis.-->
+        <!--</div>-->
         <!--</div>-->
         <!--<div class="demo-card-square demo-card-square3 mdl-card mdl-cell mdl-shadow&#45;&#45;2dp">-->
-          <!--<div class="mdl-card__title mdl-card&#45;&#45;expand">-->
-            <!--<h2 class="mdl-card__title-text">Product</h2>-->
-          <!--</div>-->
-          <!--<div class="mdl-card__supporting-text">-->
-            <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
-            <!--Aenan convallis.-->
-          <!--</div>-->
+        <!--<div class="mdl-card__title mdl-card&#45;&#45;expand">-->
+        <!--<h2 class="mdl-card__title-text">Product</h2>-->
+        <!--</div>-->
+        <!--<div class="mdl-card__supporting-text">-->
+        <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
+        <!--Aenan convallis.-->
+        <!--</div>-->
         <!--</div>-->
       </section>
       <!--End of overview sale section-->
@@ -420,7 +407,7 @@
   <!--End of main-->
 </div>
 
-<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 <!-- build:js scripts/main.min.js -->
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
