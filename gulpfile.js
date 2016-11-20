@@ -1,17 +1,29 @@
 var gulp = require('gulp'),
   sass = require('gulp-ruby-sass'),
-  autoprefixer = require('gulp-autoprefixer'),
-  cssnano = require('gulp-cssnano'),
+  compass = require('gulp-compass'),
   jshint = require('gulp-jshint'),
-  uglify = require('gulp-uglify'),
-  imagemin = require('gulp-imagemin'),
-  rename = require('gulp-rename'),
-  concat = require('gulp-concat'),
-  notify = require('gulp-notify'),
   cache = require('gulp-cache'),
-  livereload = require('gulp-livereload'),
   del = require('del');
+  // cssnano = require('gulp-cssnano'),
+  // uglify = require('gulp-uglify'),
+  // imagemin = require('gulp-imagemin'),
+  // rename = require('gulp-rename'),
+  // concat = require('gulp-concat'),
+  // notify = require('gulp-notify');
+
 
 gulp.task('default', function () {
-  // place code for your default task here
+
+  // Compile SCSS style
+  gulp.src('sass/**/*.scss')
+    .pipe(compass({
+      config_file: './config.rb',
+      css: 'stylesheets',
+      sass: 'sass'
+    }))
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'))
+    .pipe(gulp.dest('app/styles'));
+
+
 });
