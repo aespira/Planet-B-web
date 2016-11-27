@@ -1,4 +1,5 @@
-node_modules
+/node_modules/*
+!/node_modules/material-design-lite
 dist/
 .tmp
 app.yaml
@@ -6,10 +7,6 @@ app.yaml
 *.css.map
 
 # Compiled SCSS styles
-app/styles/ie.css
-app/styles/print.css
-app/styles/process-bar.css
-app/styles/screen.css
 stylesheets/
 
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm

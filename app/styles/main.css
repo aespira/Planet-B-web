@@ -428,17 +428,17 @@ html, body {
 }
 
 .mdl-card__title-1 {
-  background: url('../images/Google_-G-_Logo.svg.png') top right 15% no-repeat;
+  background: url('../images/Google_-G-_Logo.svg.png') top right 5% no-repeat;
   background-size: contain;
 }
 
 .mdl-card__title-2 {
-  background: url('../images/NBC_logo.svg.png') top right 15% no-repeat;
+  background: url('../images/NBC_logo.svg.png') top right 5% no-repeat;
   background-size: contain;
 }
 
 .mdl-card__title-3 {
-  background: url('../images/Starbucks_Corporation_Logo_2011.svg.png') top right 15% no-repeat;
+  background: url('../images/Starbucks_Corporation_Logo_2011.svg.png') top right 5% no-repeat;
   background-size: contain;
 }
 

@@ -21,8 +21,8 @@ gulp.task('default', function () {
       css: 'stylesheets',
       sass: 'sass'
     }))
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'))
+    // .pipe(jshint())
+    // .pipe(jshint.reporter('default'))
     .pipe(gulp.dest('app/styles'));
 
 

@@ -75,6 +75,11 @@
   }
 
   // Your custom JavaScript goes here
+  $('.skillbar').each(function(){
+    $(this).find('.bar').animate({
+      width: $(this).attr('data-percent')
+    }, 5000);
+  });
 
 
 })();
