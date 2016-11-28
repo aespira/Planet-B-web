@@ -4,12 +4,6 @@ var gulp = require('gulp'),
   jshint = require('gulp-jshint'),
   cache = require('gulp-cache'),
   del = require('del');
-  // cssnano = require('gulp-cssnano'),
-  // uglify = require('gulp-uglify'),
-  // imagemin = require('gulp-imagemin'),
-  // rename = require('gulp-rename'),
-  // concat = require('gulp-concat'),
-  // notify = require('gulp-notify');
 
 
 gulp.task('default', function () {
@@ -24,6 +18,4 @@ gulp.task('default', function () {
     // .pipe(jshint())
     // .pipe(jshint.reporter('default'))
     .pipe(gulp.dest('app/styles'));
-
-
 });
