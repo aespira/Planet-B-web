@@ -26,4 +26,7 @@ gulp.task('eslint', function() {
              .on('error', logErrorToConsole);
 });
 
-gulp.task('default', ['compass', 'eslint']);
+gulp.task('default', [
+  'compass'
+  // 'eslint'
+]);
