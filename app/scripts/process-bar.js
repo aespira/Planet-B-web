@@ -6,11 +6,11 @@ processBarLoop()
 
 // Process bar custom animation
 function processBarLoop() {
-  $('.processBar').each(function () {
+  $('.campaign-process-bar').each(function () {
     $(this).find('.bar').animate({width: $(this).attr('data-percent')}, 5000);
   });
 
-  $('.processBar').each(function () {
+  $('.campaign-process-bar').each(function () {
     // $(this).find('.bar').delay(3000).animate({width: 0}, 0, processBarLoop);
   });
 }
