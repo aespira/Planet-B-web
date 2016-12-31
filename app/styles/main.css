@@ -102,7 +102,7 @@ html, body {
 
 .mdl-demo .mdl-card__actions {
   margin: 0;
-  padding: 4px 40px;
+  /*padding: 4px 40px;*/
   color: inherit;
 }
 
@@ -381,21 +381,8 @@ html, body {
   /*height: 250px;*/
 }
 
-.demo-card-square1 > .mdl-card__title {
+.demo-card-square > .mdl-card__title {
   color: #fff;
-  background: url('../images/Google_-G-_Logo.svg.png') top right 15% no-repeat #c7f464;
-  background-size: contain;
-}
-
-.demo-card-square2 > .mdl-card__title {
-  color: #fff;
-  background: url('../images/NBC_logo.svg.png') top right 15% no-repeat #46B6AC;
-  background-size: contain;
-}
-
-.demo-card-square3 > .mdl-card__title {
-  color: #fff;
-  background: url('../images/Starbucks_Corporation_Logo_2011.svg.png') top right 15% no-repeat #ff6b6b;
   background-size: contain;
 }
 
@@ -408,7 +395,7 @@ html, body {
 }
 
 .custom-section__circle-container {
-  background: url('../images/logo.png') center 30% no-repeat;
+  /*background: url('../images/logo.png') center 30% no-repeat;*/
   background-size: contain;
 }
 
@@ -425,21 +412,6 @@ html, body {
 .mdl-card__actions > .mdl-button--icon {
   margin-right: 3px;
   margin-left: 3px;
-}
-
-.mdl-card__title-1 {
-  background: url('../images/Google_-G-_Logo.svg.png') top right 5% no-repeat;
-  background-size: contain;
-}
-
-.mdl-card__title-2 {
-  background: url('../images/NBC_logo.svg.png') top right 5% no-repeat;
-  background-size: contain;
-}
-
-.mdl-card__title-3 {
-  background: url('../images/Starbucks_Corporation_Logo_2011.svg.png') top right 5% no-repeat;
-  background-size: contain;
 }
 
 .mdl-card__media {
@@ -512,4 +484,11 @@ html, body {
 
 .demo-card-wide-impact > .mdl-card__menu {
   color: #fff;
+}
+
+.shadowed {
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
