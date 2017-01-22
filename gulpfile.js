@@ -1,14 +1,6 @@
 var gulp = require('gulp'),
   compass = require('gulp-compass'),
   eslint = require('gulp-eslint');
-  // cache = require('gulp-cache'),
-  // del = require('del');
-  // cssnano = require('gulp-cssnano'),
-  // uglify = require('gulp-uglify'),
-  // imagemin = require('gulp-imagemin'),
-  // rename = require('gulp-rename'),
-  // concat = require('gulp-concat'),
-  // notify = require('gulp-notify');
 
 var logErrorToConsole = function(error) {
   console.log(error);
@@ -34,4 +26,7 @@ gulp.task('eslint', function() {
              .on('error', logErrorToConsole);
 });
 
-gulp.task('default', ['compass', 'eslint']);
+gulp.task('default', [
+  'compass'
+  // 'eslint'
+]);
